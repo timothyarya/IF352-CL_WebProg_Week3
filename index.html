@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bungkus">
+        <div id="top">
+            <div id="logo">
+                <a href="">
+                    <img src="assets/web-development.png" alt="web-development">
+                </a>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#information-section">About</a></li>
+                    <li><a href="#client">Produck</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src="assets/banner1.jpg" alt="banner1">
+            <div class="banner-info">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, quisquam. Delectus, esse fuga illo pariatur in iusto officiis nihil sequi quo error sed id debitis voluptate quam similique explicabo eveniet! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quasi dolorum blanditiis quis quam magni iure repellat beatae saepe corrupti.
+                </p>
+            </div>
+        </div>
+
+        <div id="highlight">
+            <div class="box">
+                <img src="assets/thor.jpg" alt="thor">
+                <div class="highlight-box-info">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, obcaecati?
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/wick.jpg" alt="wick">
+                <div class="highlight-box-info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, illum.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="assets/ironman.jpg" alt="ironman">
+                <div class="highlight-box-info">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, impedit! 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="information-section" id="information-section" class="fade-in-element">
+            <img src="assets/banner2.jpg" alt="banner2">
+
+            <div class="information-description">
+                <h2>Kenapa harus kami?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, atque. Enim accusamus minima doloribus ducimus expedita aperiam reiciendis sunt recusandae, iusto aliquid suscipit vel veritatis, explicabo accusantium voluptatem perspiciatis totam placeat, deleniti tempora at. Quas aliquam adipisci rerum dolore corrupti.</p>
+            </div>
+        </div>
+
+        <hr />
+        
+        <div class="client-history" id="client">
+            <h2>Our Client</h2>
+            <div class="client-photo-list">
+                <div class="client-photo"><img src="assets/0.jpg" alt="0"></div>
+                <div class="client-photo"><img src="assets/1.jpg" alt="1"></div>
+                <div class="client-photo"><img src="assets/2.jpg" alt="2"></div>
+                <div class="client-photo"><img src="assets/3.jpg" alt="3"></div>
+                <div class="client-photo"><img src="assets/4.jpg" alt="4"></div>
+                <div class="client-photo"><img src="assets/5.jpg" alt="5"></div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="testimony">
+            <h2>Testimonials</h2>
+            <div class="client-testimony">
+                <div class="testimony-card">
+                    <img src="assets/6.jpg" alt="">
+                    <h3>John Thor</h3>
+                    <p>Setelah menggunakan jasa perusahaan ini, saya menjadi seorang superhero yang memiliki kekuatan untuk mengendalikan petir. Keren banget kan.</p>
+                </div>
+                <div class="testimony-card">
+                    <img src="assets/7.jpg" alt="">
+                    <h3>Tony Stark</h3>
+                    <p>Setelah saya kuliah di UMN, saya jadi jenius banget dan bisa bikin Iron Man, saya jadi super hero paling tajir di jagat raya</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <form action="#" method="get" class="subscribe-form">
+                <label>Subscribe to our newsletter to get the latest info</label>
+                <input type="email" name="email" placeholder="Enter your email here...">
+                <button type="submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="footer-information">
+                <h3>
+                    PT. Tajir Mampus Corporation Inc.
+                </h3>
+                <p>
+                    Dark Science Boulevard<br />
+                    Blok A1 No. 45<br />
+                    Gading Serpong, Tangerang
+                </p>
+                <p>
+                    Tel.: (021) 123456789
+                </p>
+            </div>
+            <div class="footer-social-media">
+                <div class="footer-social-icon">
+                    <img src="assets/facebook.png" alt="">
+                    <img src="assets/instagram.png" alt="">
+                    <img src="assets/youtube.png" alt="">
+                </div>
+                <p>Copyright &copy; 2022 | All rights reserved.</p>
+            </div>
+        </footer>
+
+        <a class="back-to-top" href="#" id="back-to-top">
+            Back to Top
+        </a>
+    </div>
+
+    <script>
+        const backToTopButton = document.getElementById("back-to-top")
+        
+        window.onscroll = () => {
+            backToTop()
+        }
+
+        const backToTop = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.classList.add("show")
+            } else {
+                backToTopButton.classList.remove("show")
+            }
+        }
+    </script>
+</body>
+</html>
