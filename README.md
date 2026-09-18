@@ -1,5 +1,6 @@
 # IF352-CL_WebProg_Week3
 Tugas Basic Web Programming Week 3 - Layout
+https://timothyarya.github.io/IF352-CL_WebProg_Week3/
 
 ## Mau Coba Buka?
 Ikuti langkah-langkah berikut!
