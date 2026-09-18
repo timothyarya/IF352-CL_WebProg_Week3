@@ -16,7 +16,6 @@ git clone https://github.com/timothyarya/IF352-CL_WebProg_Week3.git
 cd [nama direktori]
 ```
 
-3. **Buka file index.html**
-
+3. **Buka file index.html**  
 Buka file `index.html` di browser Chrome, Firefox, Safari, Edge, dan sebagainya
 
