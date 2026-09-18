@@ -17,5 +17,5 @@ cd [nama direktori]
 ```
 
 3. **Buka file index.html**
-Buka file `index.html` di browser Chrome, Firefox, Safari, Edge, dan sebagainya
+    Buka file `index.html` di browser Chrome, Firefox, Safari, Edge, dan sebagainya
 
