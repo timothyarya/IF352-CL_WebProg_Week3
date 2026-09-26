@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        jumlahMhs = window.prompt("Jumlah Mahasiswa");
+        for (i = 1; i <= jumlahMhs; i++) {
+            console.log("test");
+            let nama = window.prompt("Nama");
+            let uts = parseInt(window.prompt("UTS"));
+            let uas = parseInt(window.prompt("UAS"));
+            let tugas = parseInt(window.prompt("Tugas"));
+
+            document.write("<br /><br />" + i + ". " + nama + "<br />");
+            document.write("Tugas : " + tugas);
+            document.write("<br />UTS : " + uts);
+            document.write("<br />UAS : " + uas);
+        }
+    </script>
+</body>
+</html>

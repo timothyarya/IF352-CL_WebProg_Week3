@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        while (true) {
+            decision = window.prompt("Mau hitung apa? (luas/keliling)");
+            if (decision == "luas" || decision == "keliling") {
+                break;
+            }
+            alert("Harus pilih 'luas' atau 'keliling'");
+        }
+
+        panjang = parseFloat(window.prompt("Panjang"));
+        lebar = parseFloat(window.prompt("Lebar"));
+        
+        switch (decision) {
+            case "luas":
+                document.write("<h1>Luas : " + calcLuas(panjang, lebar) + "</h1>");
+                break;
+            case "keliling":
+                document.write("<h1>Keliling :" + calcKeliling(panjang, lebar) + "</h1>");
+                break;
+        }
+
+        function calcLuas(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        function calcKeliling(panjang, lebar) {
+            return 2 * (panjang + lebar);
+        }
+
+    </script>
+</body>
+</html>

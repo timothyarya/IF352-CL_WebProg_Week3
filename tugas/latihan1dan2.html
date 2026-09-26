@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        jumlahMhs = window.prompt("Jumlah");
+
+        document.write("<h1>Tugas 30% (0.3), UTS 30% (0.3), UAS 40% (0.4)</h1>");
+
+        for (i = 1; i <= jumlahMhs; i++) {
+            console.log("test");
+            let nama = window.prompt("Nama");
+            let tugas = parseFloat(window.prompt("Tugas"));
+            let uts = parseFloat(window.prompt("UTS"));
+            let uas = parseFloat(window.prompt("UAS"));
+            
+            document.write("<br /><br />" + i + ". " + nama + "<br />");
+            document.write("Tugas : " + tugas);
+            document.write("<br />UTS : " + uts);
+            document.write("<br />UAS : " + uas);
+            document.write("<br />Nilai Akhir : " + calcScore(tugas, uts, uas));
+            document.write("<br />Grade : " + setGrade(calcScore(tugas, uts, uas)));
+        }
+
+        function calcScore(tugas, uts, uas) {
+            return (tugas * 0.3) + (uts * 0.3) + (uas * 0.4);
+        }
+
+        function setGrade(score) {
+            if (score >= 85) {
+                return "A";
+            } else if (score >= 80) {
+                return "A-";
+            } else if (score >= 75) {
+                return "B+";
+            } else if (score >= 70) {
+                return "B";
+            } else if (score >= 65) {
+                return "B-";
+            } else if (score >= 60) {
+                return "C+";
+            } else if (score >= 55) {
+                return "C";
+            } else if (score >= 45) {
+                return "D";
+            } else {
+                return "E";
+            }
+        }
+    </script>
+</body>
+</html>

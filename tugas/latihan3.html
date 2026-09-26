@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        while (true) {
+            jam = parseInt(window.prompt("jam"));
+            if (jam >= 0 && jam <= 23) {
+                break;
+            }
+            alert("jam harus diantara 0-23");
+        }
+
+        if (jam >= 6 && jam <= 10) {
+            alert("Selamat Pagi");
+        } else if (jam >= 11 && jam <= 14) {
+            alert("Selamat Siang");
+        } else if (jam >= 15 && jam <= 17) {
+            alert("Selamat Sore");
+        } else if (jam >= 18 && jam <= 22) {
+            alert("Selamat Malam");
+        } else {
+            alert("Selamat Tidur");
+        }
+    </script>
+</body>
+</html>

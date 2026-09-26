@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        let days = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+
+        document.write("<h1>Grafik Jumlah Kehadiran Mahasiswa</h1>");
+        let graphKehadiran = days.map((day) => {
+            let jumlahMhs = parseInt(window.prompt(`Berapa mahasiswa yang masuk hari ${day}? `));
+            let graph = [];
+            for (let i = 0; i < jumlahMhs; i++) {
+                graph.push("X");
+            }
+            
+            return `<p style="font-size: 24px;"><strong>${day}</strong> : ${graph.join("")}</p>`;
+        }).join("");
+
+        document.write(graphKehadiran); 
+    </script>
+</body>
+</html>

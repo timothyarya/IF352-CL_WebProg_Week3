@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+        limit = parseInt(window.prompt("Show angka ganjil sampai berapa?"));
+
+        function showGanjil(limit) {
+            for (let i = 1; i <= limit; i = i + 2) {
+                document.write(`<h2>${i}</h2>`);
+            }
+        }
+        showGanjil(limit);
+    </script>
+</body>
+</html>
