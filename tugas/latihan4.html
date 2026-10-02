@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World</title>
+    <title>Tugas 4</title>
+
+    <style>
+        .back {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 9999;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+    </style>
 </head>
 <body>
+    <a href="../index.html" class="back">
+        Back to Home
+    </a>
+
     <script>
         while (true) {
-            decision = window.prompt("Mau hitung apa? (luas/keliling)");
+            decision = window.prompt("Mau hitung apa? (luas/keliling)").toLowerCase();
             if (decision == "luas" || decision == "keliling") {
                 break;
             }
